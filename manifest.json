@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+  
+    "name": "str_Self_Proxy",
+    "description": "block non productive sites",
+    "version": "1.0",
+  
+    "permissions": [
+      "https://ajax.googleapis.com/*",
+      "https://*.amazon.com/*",
+      "activeTab",
+      "storage",
+      "webRequest",
+      "webRequestBlocking"
+    ],
+  
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    }
+  }
